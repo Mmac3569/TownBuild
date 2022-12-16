@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\matej\Documents\TownBuild\ve vyvoji\TownBuild.jar</jar>
+  <outfile>C:\Users\matej\Documents\TownBuild\ve vyvoji\TownBuild.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>2.0.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJdk</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.2.0.0</fileVersion>
+    <txtFileVersion>1.2 beta</txtFileVersion>
+    <fileDescription>Hra o stavění města</fileDescription>
+    <copyright>No copyryght</copyright>
+    <productVersion>1.2.0.0</productVersion>
+    <txtProductVersion>1.2 beta</txtProductVersion>
+    <productName>TownBuild</productName>
+    <companyName>3569development</companyName>
+    <internalName>TownBuild</internalName>
+    <originalFilename>TownBuild.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>CZECH</language>
+  </versionInfo>
+</launch4jConfig>
