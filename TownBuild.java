@@ -61,10 +61,10 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
     public static String[] pole = {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"};
     public static String[] obsah;
     public static String[] cas_str = {"0", "0", "0", "0", "0", "0"};
-    public static char[] zadani1 = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '+', 'ì', 'š', 'è', 'ø', 'ž', 'ý', 'á', 'í', 'é', ';', '=', '´', 'ú', ')', 'ù', '§', '¨', ',', '.', '-', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7' ,'8', '9', '0', '°', '%', '¡', '/', '(', '"', '!', '?', ':', '_', '\'', '|', '€', 'ð', '[', ']', '³', '£', '#', '&', '@', '{', '}', '~', '¡', '^', '¢', '°', '²', '`', 'ÿ', '´', '½', '¨', '¸', '÷', '×', '$', 'ß', '¤', '<', '>', '*'};
+    public static char[] zadani1 = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '+', 'ì', 'š', 'è', 'ø', 'ž', 'ý', 'á', 'í', 'é', ';', '=', '´', 'ú', ')', 'ù', '§', '¨', ',', '.', '-', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7' ,'8', '9', '0', '%', '¡', '°', '/', '(', '"', '!', '?', ':', '_', '\\', '|', '€', 'ð', 'Ð', '[', ']', '³', '£', '#', '&', '@', '{', '}', '~', '¡', '^', '¢', '°', '²', '`', 'ÿ', '´', '½', '¨', '¸', '÷', '$', '×', '$', '<', '>', '*'};
     
     /**
-     * Zjistï¿½ informace o stavu hry
+     * Zjistí informace o stavu hry
      * @throws FileNotFoundException
      * @throws IOException
      */
@@ -86,7 +86,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
     }
     
     /**
-     * Zapï¿½e do souborï¿½ informace o stavu hry napï¿½ï¿½klad kolik mï¿½ hrï¿½ï¿½ penï¿½z a staveb ï¿½i postavenï¿½ mï¿½sto
+     * Zapíše do souborù informace o stavu hry napøíklad kolik má hráè penìz a staveb èi postavené mìsto
      * @throws IOException
      */
     public static void exit() throws IOException {
@@ -114,7 +114,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
     }
     
     /**
-     * Nastavï¿½ okno
+     * Nastaví okno
      * @param args
      */
     public static void main(String[] args) {
@@ -123,7 +123,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
     }
     
     /**
-     * Pï¿½idï¿½lï¿½ parametry vï¿½em pouï¿½ï¿½vanï¿½m objektï¿½m aneb naï¿½te hru
+     * Pøidìlí parametry všem používaným objektùm aneb naète hru
      */
     public static void Nacteni() {
         SwingUtilities.invokeLater(() -> {
@@ -145,15 +145,15 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
             casted = System.currentTimeMillis() /1000;
             offlinereward = ((casted - caszavreni) / 20 * 100 * polozeneuhelnedoly);
             mince = mince+offlinereward;
-            System.out.println("Zatï¿½m co jsi zde nebil, tvoje stavby ti vynesly "+Long.toString(offlinereward)+" mincï¿½");
-            JOptionPane.showMessageDialog(GUI.nacitacipozadi, "Zatï¿½m co jsi zde nebil, tvoje stavby ti vynesly "+Long.toString(offlinereward)+" mincï¿½", "Vï¿½tej zpï¿½t!", JOptionPane.PLAIN_MESSAGE, new ImageIcon("mince.png"));
+            System.out.println("Zatím co jsi zde nebil, tvoje stavby ti vynesly "+Long.toString(offlinereward)+" mincí");
+            JOptionPane.showMessageDialog(GUI.nacitacipozadi, "Zatím co jsi zde nebil, tvoje stavby ti vynesly "+Long.toString(offlinereward)+" mincí", "Vítej zpìt!", JOptionPane.PLAIN_MESSAGE, new ImageIcon("mince.png"));
             vydelavani.schedule(vydelani, 1000, 20000);
             GUI.mrizkainit();
         });
     }
     
     /**
-     * Zjistï¿½ mï¿½sto kliknutï¿½
+     * Zjistí místo kliknutí
      * @param o
      * @return pozemekx?y?(JButton)
      */
@@ -582,7 +582,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
     }
     
     /**
-     * Zjistï¿½ ikonu
+     * Zjistí ikonu
      * @param value
      * @return vyslednaikona(ImageIcon)
      */
@@ -596,7 +596,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                         save = "1";
                     }
                     else {
-                        System.out.println("Doï¿½li ti cesty!\nPokud chceï¿½ poloï¿½it dalï¿½ï¿½ cestu, zajdi do obchodu.");
+                        System.out.println("Došli ti cesty!\nPokud chceš položit další cestu, zajdi do obchodu.");
                         GUI.vyslednaIkona = GUI.obrazekpozemku;
                     }
                 }
@@ -607,7 +607,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                         save = "2";
                     }
                     else {
-                        System.out.println("Doï¿½li ti cesty!\nPokud chceï¿½ poloï¿½it dalï¿½ï¿½ cestu, zajdi do obchodu.");
+                        System.out.println("Došli ti cesty!\nPokud chceš položit další cestu, zajdi do obchodu.");
                         GUI.vyslednaIkona = GUI.obrazekpozemku;
                     }
                 }
@@ -619,7 +619,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                         save = "3";
                     }
                     else {
-                        System.out.println("Doï¿½li ti cesty!\nPokud chceï¿½ poloï¿½it dalï¿½ï¿½ cestu, zajdi do obchodu.");
+                        System.out.println("Došli ti cesty!\nPokud chceš položit další cestu, zajdi do obchodu.");
                         GUI.vyslednaIkona = GUI.obrazekpozemku;
                     }
                 }
@@ -648,7 +648,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                 default:
                     break;
             }
-            System.out.println("objekt odstranï¿½n");
+            System.out.println("objekt odstranìn");
         }
         else {
             if (value == 1) {
@@ -668,7 +668,7 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
     }
     
     /**
-     * Zjistï¿½ ikonu na zï¿½kladï¿½ informacï¿½ v souboru world.txt
+     * Zjistí ikonu na základì informací v souboru world.txt
      */
     public static void getDefaultIcon() {
         for (int i = 0; i < 140;) {
@@ -1120,8 +1120,8 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                     GUI.buypanel.setLayout(new GridLayout(2, 5));
                 }
                 else {
-                    System.out.println("Uï¿½ jsi v obchodï¿½!");
-                    JOptionPane.showMessageDialog(rootPane, "Uï¿½ jsi v obchodï¿½!", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("Už jsi v obchodì!");
+                    JOptionPane.showMessageDialog(rootPane, "Už jsi v obchodì!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else if (e.getSource().equals(GUI.hrat)) {
@@ -1144,54 +1144,54 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                     GUI.okno.add(GUI.listveci);
                     GUI.invDum.setText("Domy: "+Integer.toString(pocetdomu));
                     GUI.invCesta.setText("Cesty: "+Integer.toString(pocetcest));
-                    GUI.invUhelnydul.setText("Uhelnï¿½ doly: "+Integer.toString(pocetuhelnychdolu));
+                    GUI.invUhelnydul.setText("Uhelné doly: "+Integer.toString(pocetuhelnychdolu));
                     vobchode = false;
                     vinventari = true;
                     vmeste = false;
                     pokladani = false;
                 }
                 else {
-                    System.out.println("Uï¿½ jsi v invetï¿½ï¿½i!");
-                    JOptionPane.showMessageDialog(rootPane, "Uï¿½ jsi v inventï¿½ï¿½i!", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("Už jsi v invetáøi!");
+                    JOptionPane.showMessageDialog(rootPane, "Už jsi v inventáøi!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else if (e.getSource().equals(GUI.koupitdum)) {
                 if (mince-1000 >= 0) {
                     mince = mince-1000;
                     pocetdomu++;
-                    System.out.println("Dï¿½m zakoupen\nNinï¿½ mï¿½ "+pocetdomu+" domï¿½\n");
+                    System.out.println("Dùm zakoupen\nNiní máš "+pocetdomu+" domù\n");
                     mince_str = Long.toString(mince);
                     GUI.ukazatelpenez.setText(mince_str);
                 }
                 else {
-                    System.out.println("Vypadï¿½ to, ï¿½e ti doï¿½li penï¿½ze\n");
-                    JOptionPane.showMessageDialog(rootPane, "Vypadï¿½ to, ï¿½e ti doï¿½li penï¿½ze", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("Vypadá to, že ti došli peníze\n");
+                    JOptionPane.showMessageDialog(rootPane, "Vypadá to, že ti došli peníze", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else if (e.getSource().equals(GUI.koupitcestu)) {
                 if (mince-100 >= 0) {
                     mince = mince-100;
                     pocetcest++;
-                    System.out.println("Cesta zakoupena\nNinï¿½ mï¿½ "+pocetcest+" cest\n");
+                    System.out.println("Cesta zakoupena\nNiní máš "+pocetcest+" cest\n");
                     mince_str = Long.toString(mince);
                     GUI.ukazatelpenez.setText(mince_str);
                 }
                 else {
-                    System.out.println("Vypadï¿½ to, ï¿½e ti doï¿½li penï¿½ze\n");
-                    JOptionPane.showMessageDialog(rootPane, "Vypadï¿½ to, ï¿½e ti doï¿½li penï¿½ze", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("Vypadá to, že ti došli peníze\n");
+                    JOptionPane.showMessageDialog(rootPane, "Vypadá to, že ti došli peníze", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else if (e.getSource().equals(GUI.koupituhelnydul)) {
                 if (mince-5000 >= 0) {
                     mince = mince-5000;
                     pocetuhelnychdolu++;
-                    System.out.println("Uhelnï¿½ dï¿½l zakoupen\nNinï¿½ mï¿½ "+pocetuhelnychdolu+" uhelnï¿½ch dolï¿½\n");
+                    System.out.println("Uhelný dùl zakoupen\nNiní máš "+pocetuhelnychdolu+" uhelných dolù\n");
                     mince_str = Long.toString(mince);
                     GUI.ukazatelpenez.setText(mince_str);
                 }
                 else {
-                    System.out.println("Vypadï¿½ to, ï¿½e ti doï¿½li penï¿½ze\n");
-                    JOptionPane.showMessageDialog(rootPane, "Vypadï¿½ to, ï¿½e ti doï¿½li penï¿½ze", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("Vypadá to, že ti došli peníze\n");
+                    JOptionPane.showMessageDialog(rootPane, "Vypadá to, že ti došli peníze", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else if (e.getSource().equals(GUI.mesto)) {
@@ -1210,8 +1210,8 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
                     pokladani = false;
                 }
                 else {
-                    System.out.println("Uï¿½ jsi v mï¿½stï¿½!");
-                    JOptionPane.showMessageDialog(rootPane, "Uï¿½ jsi v mï¿½stï¿½!", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("Už jsi v mìstì!");
+                    JOptionPane.showMessageDialog(rootPane, "Už jsi v mìstì!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else if (e.getSource().equals(GUI.nastaveni)) {
@@ -1321,19 +1321,19 @@ public class TownBuild extends JFrame implements ActionListener, WindowListener,
         if (e.getButton() == 1) {
             int tip = JOptionPane.INFORMATION_MESSAGE;
             if (e.getComponent().equals(GUI.invCesta)) {
-                System.out.println("Cena: 100\nVï¿½nos: 0 mincï¿½/min\nVlastnï¿½no: "+pocetcest+"\nPotï¿½ebnï¿½ mï¿½sto: 1 kostiï¿½ka\nKategorie: Cesty\nLevel: 0\nSpeciï¿½lnï¿½ funkce:\n    +Lidi mï¿½ï¿½ou chodit pï¿½es");
-                String[] text = {"Cena: 100","Vï¿½nos: 0 mincï¿½/min","Vlastnï¿½no: "+pocetcest,"Potï¿½ebnï¿½ mï¿½sto: 1 kostiï¿½ka","Kategorie: Cesty","Level: 0","Speciï¿½lnï¿½ funkce:","    +Lidi mï¿½ï¿½ou chodit pï¿½es"};
+                System.out.println("Cena: 100\nVýnos: 0 mincí/min\nVlastnìno: "+pocetcest+"\nPotøebné místo: 1 kostièka\nKategorie: Cesty\nLevel: 0\nSpeciální funkce:\n    +Lidi mùžou chodit pøes");
+                String[] text = {"Cena: 100","Výnos: 0 mincí/min","Vlastnìno: "+pocetcest,"Potøebné místo: 1 kostièka","Kategorie: Cesty","Level: 0","Speciální funkce:","    +Lidi mùžou chodit pøes"};
                 JOptionPane.showMessageDialog(rootPane, text, "Cesta", tip, GUI.obrazekcesty);
             }
             else if (e.getComponent().equals(GUI.invDum)) {
-                System.out.println("Cena: 1000\nVï¿½nos: 0 mincï¿½/min\nVlastnï¿½no: "+pocetdomu+"\nPotï¿½ebnï¿½ mï¿½sto: 1 kostiï¿½ka\nKategorie: Obydlï¿½\nLevel: 0\nSpeciï¿½lnï¿½ funkce:\n    +Slouï¿½ï¿½ k ubytovï¿½nï¿½ lidï¿½");
-                String[] text = {"Cena: 1000","Vï¿½nos: 0 mincï¿½/min","Vlastnï¿½no: "+pocetdomu,"Potï¿½ebnï¿½ mï¿½sto: 1 kostiï¿½ka","Kategorie: Obydlï¿½","Level: 0","Speciï¿½lnï¿½ funkce:","    +Slouï¿½ï¿½ k ubytovï¿½nï¿½ lidï¿½"};
-                JOptionPane.showMessageDialog(rootPane, text, "Dï¿½m", tip, GUI.obrazekdomu);
+                System.out.println("Cena: 1000\nVýnos: 0 mincí/min\nVlastnìno: "+pocetdomu+"\nPotøebné místo: 1 kostièka\nKategorie: Obydlí\nLevel: 0\nSpeciální funkce:\n    +Slouží k ubytování lidí");
+                String[] text = {"Cena: 1000","Výnos: 0 mincí/min","Vlastnìno: "+pocetdomu,"Potøebné místo: 1 kostièka","Kategorie: Obydlí","Level: 0","Speciální funkce:","    +Slouží k ubytování lidí"};
+                JOptionPane.showMessageDialog(rootPane, text, "Dùm", tip, GUI.obrazekdomu);
             }
             else if (e.getComponent().equals(GUI.invUhelnydul)) {
-                System.out.println("Cena: 5000\nVï¿½nos: 100 mincï¿½/min\nVlastnï¿½no: "+pocetuhelnychdolu+"\nPotï¿½ebnï¿½ mï¿½sto: 1 kostiï¿½ka\nKategorie: Doly\nLevel: 0\nSpeciï¿½lnï¿½ funkce:\n    +Mï¿½ï¿½e mï¿½t zamï¿½stnance");
-                String[] text = {"Cena: 5000","Vï¿½nos: 100 mincï¿½/min","Vlastnï¿½no: "+pocetuhelnychdolu,"Potï¿½ebnï¿½ mï¿½sto: 1 kostiï¿½ka","Kategorie: Doly","Level: 0","Speciï¿½lnï¿½ funkce:","    +Mï¿½ï¿½e mï¿½t zamï¿½stnance"};
-                JOptionPane.showMessageDialog(rootPane, text, "Uhelnï¿½ dï¿½l", tip, GUI.obrazekuhelnehodolu);
+                System.out.println("Cena: 5000\nVýnos: 100 mincí/min\nVlastnìno: "+pocetuhelnychdolu+"\nPotøebné místo: 1 kostièka\nKategorie: Doly\nLevel: 0\nSpeciální funkce:\n    +Mùže mít zamìstnance");
+                String[] text = {"Cena: 5000","Výnos: 100 mincí/min","Vlastnìno: "+pocetuhelnychdolu,"Potøebné místo: 1 kostièka","Kategorie: Doly","Level: 0","Speciální funkce:","    +Mùže mít zamìstnance"};
+                JOptionPane.showMessageDialog(rootPane, text, "Uhelný dùl", tip, GUI.obrazekuhelnehodolu);
             }
         }
         else if (e.getButton() == 3) {
@@ -1432,7 +1432,7 @@ class Odpocet extends TimerTask {
                 if (i == 6) {
                     System.out.println(Integer.toString(i));
                     TownBuild.GUI.napis.setText(Integer.toString(i));
-                    TownBuild.GUI.napis.setText("Hra zaï¿½ne za:");
+                    TownBuild.GUI.napis.setText("Hra zaène za:");
                     i--;
                 }
                 else {

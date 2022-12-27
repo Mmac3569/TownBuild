@@ -1,6 +1,6 @@
-mince = 0
+mince = 10
 Domy = 0
 Cesty = 0
 Uhelnedoly = 0
 polozeneUhelnedoly = 0
-1672139936
+1672155153

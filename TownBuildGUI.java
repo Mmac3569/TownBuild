@@ -1,6 +1,5 @@
 package GUI;
 
-import main.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -40,16 +39,16 @@ public class TownBuildGUI extends JFrame {
     public final static ImageIcon pozemekUhelnydul = new ImageIcon("uhelnydul-pozemek.png");
     public static ImageIcon vyslednaIkona;
     
-    public static JButton hrat = new JButton("Hrï¿½t");
+    public static JButton hrat = new JButton("Hrát");
     public static JButton koupitcestu = new JButton("koupit");
     public static JButton koupitdum = new JButton("koupit");
     public static JButton koupituhelnydul = new JButton("koupit");
     public static JButton obchod = new JButton("Obchod");
-    public static JButton mesto = new JButton("Mï¿½sto");
-    public static JButton inventar = new JButton("Inventï¿½ï¿½");
-    public static JButton nastaveni = new JButton("Nastavenï¿½");
-    public static JButton ziskatpenize = new JButton("Zï¿½skat penï¿½ze");
-    public static JButton jaksepise = new JButton("Jak se pï¿½e");
+    public static JButton mesto = new JButton("Mìsto");
+    public static JButton inventar = new JButton("Inventáø");
+    public static JButton nastaveni = new JButton("Nastavení");
+    public static JButton ziskatpenize = new JButton("Získat peníze");
+    public static JButton jaksepise = new JButton("Jak se píše");
     public static JButton place;
     
     public static JButton pozemekx0y0 = new JButton(obrazekpozemku);
@@ -197,9 +196,9 @@ public class TownBuildGUI extends JFrame {
     public static JLabel dum = new JLabel(obrazekdomu);
     public static JLabel uhelnydul = new JLabel(obrazekuhelnehodolu);
     public static JLabel nacitacipozadi = new JLabel(obrazeknacitacihopozadi);
-    public static String[] infooapce = {"---------","Autoï¿½i","---------","Vytvoï¿½il: Matï¿½j Mï¿½ca","\n","------------------------------","Zkopï¿½rovanï¿½ obrï¿½zky","------------------------------","    Dï¿½m: depositphotos.com","    Uhelnï¿½ dï¿½l: iconspng.com","    Pozemek: cz.wallpapers-fenix.eu","    Naï¿½ï¿½tacï¿½ pozadï¿½: starovekyegypt.net","    Ikona: ï¿½T edu(edu.ceskatelevize.cz)","    Ikona mince: depositphotos.com"};
+    public static String[] infooapce = {"---------","Autoøi","---------","Vytvoøil: Matìj Máca","\n","------------------------------","Zkopírované obrázky","------------------------------","    Dùm: depositphotos.com","    Uhelný dùl: iconspng.com","    Pozemek: cz.wallpapers-fenix.eu","    Naèítací pozadí: starovekyegypt.net","    Ikona: ÈT edu(edu.ceskatelevize.cz)","    Ikona mince: depositphotos.com"};
     public static JLabel verze = new JLabel("verze 1.2 beta");
-    public static JLabel napis = new JLabel("Hra zaï¿½ne za:");
+    public static JLabel napis = new JLabel("Hra zaène za:");
     public static JLabel ukazatelpenez;
     public static JLabel invDum;
     public static JLabel invCesta;
@@ -336,7 +335,7 @@ public class TownBuildGUI extends JFrame {
             okno.getContentPane().add(ukazatelpenez, BorderLayout.NORTH);
             okno.add(buypanel);
             
-            invUhelnydul = new JLabel("Uhelnï¿½doly:"+Integer.toString(tb.pocetuhelnychdolu));
+            invUhelnydul = new JLabel("Uhelnédoly:"+Integer.toString(tb.pocetuhelnychdolu));
             invCesta = new JLabel("Cesty:"+Integer.toString(tb.pocetcest));
             invDum = new JLabel("Domy:"+Integer.toString(+tb.pocetdomu));
             invUhelnydul.addMouseListener(tb);
