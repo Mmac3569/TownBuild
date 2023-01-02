@@ -9,5 +9,5 @@
 + Nainstalujte si jazyk Java ze stránek java.com
 + Spusťte soubor TownBuild.exe
 
-#Máte problém?
+# Máte problém?
 Nahlašte ho v sekci Issues! (Návod jak napsat problém najdete tam)
